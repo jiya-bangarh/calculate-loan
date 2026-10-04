@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .calc{
+            border: 2px solid black;
+            box-shadow: 0px 10px 15px gray;
+        }
+        .main{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input:active{
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="main w-full h-screen text-center bg-gray-100 text-gray-900 ">
+        <div class="calc w-[70vw] md:w-[50vw] lg:w-[50vw] rounded-3xl border-2 h-[80vh] md:h-[80vh] lg:h-[80] bg-gray-300">
+            <h3 class="el1 h-[10%] mt-[60px] mb-[0px] font-bold text-3xl lg:text-4xl">Loan Calculator</h2>
+            <div class="calc1 h-[15%]">
+                <h2 class="lg:text-2xl">
+                    Enter Total Amount:
+                </h2><input type="number" min="0" max="1,00,000" step="1" id="amount" class="lg:w-[18vw]"></div>
+            <div class="calc2 h-[15%]">
+                <h2 class="lg:text-2xl">Enter Interest Rate%:</h2><input type="text" id="interest" class="lg:w-[18vw]"></div>
+            <div class="calc3 h-[15%]">
+                <h2 class="lg:text-2xl">Total Month:</h2><input type="text" id="month" class="lg:w-[18vw]"></div>
+            <p class="el1-last h-[10%] mb-[40px] h-[15%] lg:text-2xl">Monthy Amount To Pay:</p>
+        </div>
+    </div>
+</body>
+<script src="/html folder/interest/interest.js"></script>
+</html>
